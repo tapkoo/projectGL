@@ -87,6 +87,7 @@ void MainWindow::on_lineEdit_2_returnPressed()
 
 void MainWindow::on_pushButton_3_clicked()
 {
+    SendToServer(ui->lineEdit_2->text());
     QMessageBox::information(this, "Information about list room","In this moment available is only one room, another one will be add in the future");
 }
 
